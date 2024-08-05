@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HAND GESTURES</title>
+        <style>
+body{
+        background-attachment: fixed;    
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  background-color: gray; /* Change background color to your preference */
+  display: flex;
+}
+nav ul li {
+  flex-grow: 1;
+}
+nav ul li a {
+  display: block;
+  padding: 1rem; /* Add padding to your preference */
+  text-align: center;
+  color: #fff; /* Change text color to your preference */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add hover transition effect */
+}
+
+ .logo {
+        position: relative;
+        display: flex;
+        align-items: center; 
+}       
+    
+    /* Style for the logo image */
+    .logo img {
+      width: 80px; /* Adjust the width to match your logo size */
+      height: auto;
+      margin-right: 450px; /* Add margin between logo and heading */
+    }
+
+    /* Style for the heading */
+.logo h1 {
+  margin: 0; /* Reset margin for heading */
+}
+    nav ul li a:hover {
+        background-color: white; 
+        color: red;
+    }
+p{
+    font-family: 'Courier New', Courier, monospace;;
+}
+
+</style>
+        
+    </head>
+<body style="background-image: url(background.jpg);background-size: 115% auto;">
+  <div class="logo">
+    <img src="logo.jpg" alt="My Logo"> 
+    <h1 style="text-align: center;"><i>AI RECONGINITION OF HAND GESTURES</i></h1>
+  </div>
+<br>
+    
+<nav>
+  <ul style="font-size: 25px;">
+    <li><a href="home.html" style="background-color:black;">Home</a></li>
+    <li><a href="Hand.html">Hand Gestures</a> </li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="ABOUT.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<h1>Hand tracking and gesture recognition with AI: How does it work?</h1>
+<p1> Gesture recognition provides real-time data to a computer to make it fulfill the user’s commands. Motion sensors in a device can track and interpret gestures, using them as the primary source of data input. A majority of gesture recognition solutions feature a combination of 3D depth-sensing cameras and infrared cameras together with machine learning systems. Machine learning algorithms are trained based on labeled depth images of hands, allowing them to recognize hand and finger positions.</p1>
+<h2>Gesture recognition consists of three basic levels: </h2>
+<h3>Detection:</h3> With the help of a camera, a device detects hand or body movements, and a machine learning algorithm segments the image to find hand edges and positions.
+<h3>Tracking:</h3> A device monitors movements frame by frame to capture every movement and provide accurate input for data analysis.
+<h3>Recognition:</h3> The system tries to find patterns based on the gathered data. When the system finds a match and interprets a gesture, it performs the action associated with this gesture Feature.
+        
+<p2>
+    <h3>HGR system</h3>
+    <img src="table.jpg" width="800" height="350">
+    <br>
+Many solutions use vision-based systems for hand tracking, but such an approach has a lot of limitations. Users have to move their hands within a restricted area, and these systems struggle when hands overlap or aren’t fully visible. With sensor-based motion tracking, however, gesture recognition systems are capable of recognizing both static and dynamic gestures in real time.</p2>
+<br>
+<p3>
+In sensor-based systems, depth sensors are used to align computer-generated images with real ones. Leap motion sensors are also used in hand tracking to detect the number and three-dimensional position of fingers, locate the center of the palm, and determine hand orientation. Processed data provides insights on fingertip angles, distance from the palm center, fingertip elevation, coordinates in 3D space, and more. The hand gesture recognition system using image processing looks for patterns using algorithms trained on data from depth and leap motion sensors:</p3>
+<br>
+<p4>
+1.The system distinguishes a hand from the background using color and depth data. The hand sample is further divided into the arm, wrist, palm, and fingers. The system ignores the arm and wrist since they don’t provide gesture information.
+<br>
+2.Next, the system obtains information about the distance from the fingertips to the center of the palm, the elevation of the fingertips, the shape of the palm, the position of the fingers, and so on.
+<br>
+3.Lastly, the system collects all extracted features into a feature vector that represents a gesture. A hand gesture recognition solution, using AI, matches the feature vector with various gestures in the database and recognizes the user’s gesture.<br>
+</p4>
+<p5>
+<h2>Things to consider while developing gesture recognition technology</h2>
+</p5>
+<p6>Real-time hand gesture perception, while being natural for people, is quite a challenge for computer vision. Hands often get in the way of each other as seen by a camera (think of a fist or handshake) and lack high-contrast patterns.<br>
+
+To develop an HGR system, AI algorithms are trained to recognize labeled data and predict unknown data based on the developed model. A hand tracking database is the first step in AI training. To create a training data set, depth cameras are used to segment a specific element from the background. High-quality segmentation helps AI distinguish between left and right hands, individual fingers, etc. The higher the quality of data sets and the more annotations they include, the higher the accuracy of dynamic hand gesture recognition with computer vision.<br>
+
+At CVPR, Google announced a new approach to hand perception implemented in MediaPipe — a cross-platform framework for building multimodal machine learning pipelines. With this new method, real-time performance can be achieved even on mobile devices, scaling to multiple hands.
+The machine learning pipeline of this hand tracking solution consists of several models:<br>
+</p6>
+<img src="table 2.jpg" width="800" height="450">
+
+    </div>
+</div>  
+<div class="text">
+    <h1>Applications of hand gesture recognition technology</h1>
+    <p7>
+        In recent years, HGR technology has started to penetrate various industries as advances in computer vision, sensors, machine learning, and deep learning have made it more available and accurate. The top four fields actively adopting hand tracking and gesture recognition are automotive, healthcare, virtual reality, and consumer electronics.
+In recent years, HGR technology has started to penetrate various industries as advances in computer vision, sensors, machine learning, and deep learning have made it more available and accurate. The top four fields actively adopting hand tracking and gesture recognition are automotive, healthcare, virtual reality, and consumer electronics.<br>
+</p7>
+<p8>
+    <h3>Automotive</h3>
+    <br>
+A gesture recognition solution from Sony DepthSensing Solutions has a time-of-flight feature that measures the time it takes for a gesture to “travel” from the infrared sensor to the object and back. The AI is trained to distinguish main gestures from gestural noise and to operate under any lighting conditions.</p8>
+
+<p9>The BMW 7 Series has a built-in HGR system that recognizes five gestures and can control music and incoming calls, among other things. Less interaction with the touchscreen makes the driving experience safer and more convenient.</p9>
+<br>
+<h3>Healthcare</h3>
+<p10>
+    Emergency rooms and operating rooms may be chaotic, with lots of noise from personnel and machines. In such environments, voice commands are less effective than gestures. Touchscreens are not an option either, since there’s a strict boundary between what is and is not sterile. But accessing information and imaging during surgery or another manipulation is possible with HGR tech, as proven by Microsoft. GestSure provides doctors with the ability to check MRI, CT, and other imagery with simple gestures without scrubbing out.</p10><br>
+<h3>Virtual reality</h3>
+
+<p11>In 2016, Leap Motion (acquired by Ultrahaptics in 2019) presented updated HGR software that allows users, in addition to controlling a PC, to track gestures in virtual reality. The Leap Motion controller is a USB device that observes the area of about one meter with the help of two IR cameras and three infrared LEDs. This controller is used for applications in the medical, automotive, and other fields.
+
+A hand tracking application from ManoMotion recognizes gestures in three dimensions using a smartphone camera (on both Android and iOS) and can be applied in AR and VR environments. The use cases for this technology include gaming, IoT devices, consumer electronics, and robots.
+</p11>
+
+    </body>
+</html>
